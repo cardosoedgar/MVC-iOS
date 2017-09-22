@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="isMVCbad" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cgw-DH-eby">
+                                <rect key="frame" x="87.5" y="120" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="q7c-gH-HZR"/>
+                                    <constraint firstAttribute="width" constant="200" id="yzh-Va-77e"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gm5-Me-gOV">
+                                <rect key="frame" x="87.5" y="170" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="H1y-yG-slb"/>
+                                    <constraint firstAttribute="height" constant="30" id="tfy-Rn-CeR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AmD-cg-eiP">
+                                <rect key="frame" x="87.5" y="220" width="200" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="gM6-lF-ivz"/>
+                                    <constraint firstAttribute="width" constant="200" id="ivb-V3-4cn"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rg-Cx-Tuj">
+                                <rect key="frame" x="168" y="270" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vjp-dG-A5W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWP-Ae-j5G">
+                                <rect key="frame" x="133.5" y="320" width="107" height="30"/>
+                                <state key="normal" title="Create Account"/>
+                                <connections>
+                                    <action selector="createAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8G-X9-oBF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gm5-Me-gOV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3H6-pe-BvB"/>
+                            <constraint firstItem="4rg-Cx-Tuj" firstAttribute="top" secondItem="AmD-cg-eiP" secondAttribute="bottom" constant="20" id="Bqp-mQ-gap"/>
+                            <constraint firstItem="Gm5-Me-gOV" firstAttribute="top" secondItem="Cgw-DH-eby" secondAttribute="bottom" constant="20" id="O8j-vc-HOf"/>
+                            <constraint firstItem="Cgw-DH-eby" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VkI-kW-Pkg"/>
+                            <constraint firstItem="XWP-Ae-j5G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YY4-Zo-HxF"/>
+                            <constraint firstItem="AmD-cg-eiP" firstAttribute="top" secondItem="Gm5-Me-gOV" secondAttribute="bottom" constant="20" id="aR6-NW-gOd"/>
+                            <constraint firstItem="Cgw-DH-eby" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="mYn-Tf-mSa"/>
+                            <constraint firstItem="AmD-cg-eiP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tvx-li-swj"/>
+                            <constraint firstItem="XWP-Ae-j5G" firstAttribute="top" secondItem="4rg-Cx-Tuj" secondAttribute="bottom" constant="20" id="wxj-ro-fyf"/>
+                            <constraint firstItem="4rg-Cx-Tuj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yo6-uc-dUt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Gm5-Me-gOV" id="DUu-bN-CDe"/>
+                        <outlet property="nameTextField" destination="Cgw-DH-eby" id="hE9-l9-6IT"/>
+                        <outlet property="passwordTextField" destination="AmD-cg-eiP" id="Shx-PX-AhA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
