@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     @IBAction func createAccount(_ sender: Any) {
         loginManager.register(name: nameTextField.text, email: emailTextField.text, password: passwordTextField.text) { success in
-            
+            print("\(success)")
         }
     }
 }
