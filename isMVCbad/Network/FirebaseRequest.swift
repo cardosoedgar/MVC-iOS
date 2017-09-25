@@ -11,27 +11,30 @@ import Firebase
 
 class FirebaseRequest: NetworkRequest {
     
-    func register(name: String, email: String, password: String, completion: @escaping (Result<User>) -> Void) {
+    func createAccount(email: String, password: String, completion: @escaping (Result<User>) -> Void) {
         Auth.auth().createUser(withEmail: email, password: password) { user, error in
             guard let user = user, let email = user.email else {
                 return completion(.error)
             }
             
-            user.createProfileChangeRequest().displayName = name
-            
-            let registeredUser = User(id: user.uid, name: name, email: email)
+            let registeredUser = User(id: user.uid, email: email)
             completion(.success(registeredUser))
         }
     }
     
     func login(email: String, password: String, completion: @escaping (Result<User>) -> Void) {
         Auth.auth().signIn(withEmail: email, password: password) { user, error in
-            guard let user = user, let email = user.email, let name = user.displayName else {
+            guard let user = user, let email = user.email else {
                 return completion(.error)
             }
             
-            let loginUser = User(id: user.uid, name: name, email: email)
+            let loginUser = User(id: user.uid, email: email)
             completion(.success(loginUser))
         }
+    }
+    
+    func signout(completion: (() -> Void)?) {
+        try? Auth.auth().signOut()
+        completion?()
     }
 }

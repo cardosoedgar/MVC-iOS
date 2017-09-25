@@ -8,11 +8,10 @@
 
 import Foundation
 
-typealias JsonObject = [String: Any]
-
 protocol NetworkRequest {
-    func register(name: String, email: String, password: String, completion: @escaping (Result<User>) -> Void)
+    func createAccount(email: String, password: String, completion: @escaping (Result<User>) -> Void)
     func login(email: String, password: String, completion: @escaping (Result<User>) -> Void)
+    func signout(completion: (() -> Void)?)
 }
 
 enum Result<T> {

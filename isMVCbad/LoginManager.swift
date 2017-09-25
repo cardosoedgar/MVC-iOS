@@ -31,16 +31,21 @@ class LoginManager {
         }
     }
     
-    func register(name: String?, email: String?, password: String?, completion: @escaping (Bool) -> Void) {
-        guard let name = name, let email = email, let password = password else {
+    func createAccount(email: String?, password: String?, completion: @escaping (Bool) -> Void) {
+        guard let email = email, let password = password else {
             return completion(false)
         }
         
-        network.register(name: name, email: email, password: password) { result in
+        network.createAccount(email: email, password: password) { result in
             guard case .success = result else {
                 return completion(false)
             }
             completion(true)
         }
+    }
+    
+    func signout(completion: @escaping () -> Void) {
+        network.signout(completion: nil)
+        completion()
     }
 }
