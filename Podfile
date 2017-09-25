@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '11.0'
 
 target 'isMVCbad' do
   use_frameworks!
@@ -9,7 +9,9 @@ target 'isMVCbad' do
 
   target 'isMVCbadTests' do
     inherit! :search_paths
-    # Pods for testing
+    
+    pod 'Quick'
+    pod 'Nimble'
   end
 
 end

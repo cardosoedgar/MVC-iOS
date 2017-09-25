@@ -22,6 +22,7 @@
 		EBB9F8BE1F75B02900475941 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9F8BD1F75B02900475941 /* NetworkRequest.swift */; };
 		EBB9F8C31F75C28C00475941 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBB9F8C21F75C28C00475941 /* GoogleService-Info.plist */; };
 		EBC1816D1F798118002C930D /* ControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1816C1F798118002C930D /* ControllerExtensions.swift */; };
+		EBC181721F79A480002C930D /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC181711F79A47F002C930D /* ConfigManager.swift */; };
 		EBD5D7DF1F797B7D00598E09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5D7DE1F797B7D00598E09 /* HomeViewController.swift */; };
 		EBD5D7E11F797DEB00598E09 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5D7E01F797DEB00598E09 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		EBB9F8BD1F75B02900475941 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		EBB9F8C21F75C28C00475941 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EBC1816C1F798118002C930D /* ControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerExtensions.swift; sourceTree = "<group>"; };
+		EBC181711F79A47F002C930D /* ConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigManager.swift; sourceTree = "<group>"; };
 		EBD5D7DE1F797B7D00598E09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EBD5D7E01F797DEB00598E09 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,15 +129,15 @@
 		EBA570511F758E1900D3B6F6 /* isMVCbad */ = {
 			isa = PBXGroup;
 			children = (
-				EBB9F8C21F75C28C00475941 /* GoogleService-Info.plist */,
-				EBA5705E1F758E1900D3B6F6 /* Info.plist */,
+				EBC181731F79A489002C930D /* plist */,
+				EBB9F8BF1F75B1F000475941 /* Network */,
 				EBA570521F758E1900D3B6F6 /* AppDelegate.swift */,
 				EBA570541F758E1900D3B6F6 /* LoginViewController.swift */,
 				EBD5D7DE1F797B7D00598E09 /* HomeViewController.swift */,
 				EBD5D7E01F797DEB00598E09 /* CreateAccountViewController.swift */,
 				EBA570751F758EAE00D3B6F6 /* User.swift */,
+				EBC181711F79A47F002C930D /* ConfigManager.swift */,
 				EBA570771F758EEF00D3B6F6 /* LoginManager.swift */,
-				EBB9F8BF1F75B1F000475941 /* Network */,
 				EBA570721F758E4700D3B6F6 /* Support */,
 			);
 			path = isMVCbad;
@@ -169,6 +171,15 @@
 				EBB9F8BD1F75B02900475941 /* NetworkRequest.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		EBC181731F79A489002C930D /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				EBB9F8C21F75C28C00475941 /* GoogleService-Info.plist */,
+				EBA5705E1F758E1900D3B6F6 /* Info.plist */,
+			);
+			name = plist;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,9 +365,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-isMVCbadTests/Pods-isMVCbadTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -391,6 +407,7 @@
 				EBC1816D1F798118002C930D /* ControllerExtensions.swift in Sources */,
 				EBB9F8BC1F75B01400475941 /* FirebaseRequest.swift in Sources */,
 				EBA570551F758E1900D3B6F6 /* LoginViewController.swift in Sources */,
+				EBC181721F79A480002C930D /* ConfigManager.swift in Sources */,
 				EBA570781F758EEF00D3B6F6 /* LoginManager.swift in Sources */,
 				EBA570531F758E1900D3B6F6 /* AppDelegate.swift in Sources */,
 				EBD5D7E11F797DEB00598E09 /* CreateAccountViewController.swift in Sources */,
@@ -581,7 +598,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2C685C97F8383DAF3493DBE /* Pods-isMVCbadTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83C3V38WSB;
@@ -599,7 +615,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA670CB185F90B803F1E762D /* Pods-isMVCbadTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83C3V38WSB;
