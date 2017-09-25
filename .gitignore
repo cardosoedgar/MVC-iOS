@@ -2,3 +2,4 @@
 .bundle/
 Pods/
 .DS_Store
+xcuserdata/
