@@ -10,14 +10,14 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
-    let loginManager = LoginManager()
+    let configManager = ConfigManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     @IBAction func logout(_ sender: Any) {
-        loginManager.signout {
+        configManager.signout {
             self.dismiss(animated: true, completion: nil)
         }
     }

@@ -10,11 +10,7 @@ import Foundation
 
 class LoginManager {
     private var user: User?
-    private let network: NetworkRequest
-    
-    init() {
-        self.network = FirebaseRequest()
-    }
+    private let network: NetworkRequest = FirebaseRequest()
     
     func login(email: String?, password: String?, completion: @escaping (Bool) -> Void) {
         guard let email = email, let password = password else {
@@ -42,10 +38,5 @@ class LoginManager {
             }
             completion(true)
         }
-    }
-    
-    func signout(completion: @escaping () -> Void) {
-        network.signout(completion: nil)
-        completion()
     }
 }
