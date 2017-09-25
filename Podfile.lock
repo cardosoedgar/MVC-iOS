@@ -40,8 +40,22 @@ PODS:
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
-  - Nimble
-  - Quick
+  - Nimble (from `https://github.com/Quick/Nimble`)
+  - Quick (from `https://github.com/Quick/Quick`)
+
+EXTERNAL SOURCES:
+  Nimble:
+    :git: https://github.com/Quick/Nimble
+  Quick:
+    :git: https://github.com/Quick/Quick
+
+CHECKOUT OPTIONS:
+  Nimble:
+    :commit: a63252b16eba6cdebec4e4936388c90552165a68
+    :git: https://github.com/Quick/Nimble
+  Quick:
+    :commit: 3665ae9570b682a562df847cccbb46811864676a
+    :git: https://github.com/Quick/Quick
 
 SPEC CHECKSUMS:
   Firebase: 9548cae14d69718add12d75a5b312893f7ef89c7
@@ -52,9 +66,9 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
-  Nimble: 657d000e11df8aebe27cdaf9d244de7f30ed87f7
-  Quick: dafc587e21eed9f4cab3249b9f9015b0b7a7f71d
+  Nimble: 1b6670c36e5750169b9e4cc2e9cfa82a7603c69e
+  Quick: 4700beb8056662b579facd79eaca7f04fb3d48e6
 
-PODFILE CHECKSUM: 99366301624ca371136bbecfd512fa6009a67187
+PODFILE CHECKSUM: 07ef19e39d79ffa2aed23a02056431b89fc51f87
 
 COCOAPODS: 1.3.1

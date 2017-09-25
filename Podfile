@@ -10,8 +10,8 @@ target 'isMVCbad' do
   target 'isMVCbadTests' do
     inherit! :search_paths
     
-    pod 'Quick'
-    pod 'Nimble'
+    pod 'Quick', :git => 'https://github.com/Quick/Quick'
+    pod 'Nimble', :git => 'https://github.com/Quick/Nimble'
   end
 
 end
