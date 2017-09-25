@@ -24,6 +24,7 @@
 		EBC181721F79A480002C930D /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC181711F79A47F002C930D /* ConfigManager.swift */; };
 		EBC181761F79AC53002C930D /* NetworkRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC181751F79AC53002C930D /* NetworkRequestMock.swift */; };
 		EBC181791F79B0C5002C930D /* LoginManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC181781F79B0C5002C930D /* LoginManagerSpec.swift */; };
+		EBC1817B1F79B6DA002C930D /* ConfigManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1817A1F79B6DA002C930D /* ConfigManagerSpec.swift */; };
 		EBD5D7DF1F797B7D00598E09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5D7DE1F797B7D00598E09 /* HomeViewController.swift */; };
 		EBD5D7E11F797DEB00598E09 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5D7E01F797DEB00598E09 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		EBC181741F79AC53002C930D /* isMVCbadTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "isMVCbadTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		EBC181751F79AC53002C930D /* NetworkRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestMock.swift; sourceTree = "<group>"; };
 		EBC181781F79B0C5002C930D /* LoginManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManagerSpec.swift; sourceTree = "<group>"; };
+		EBC1817A1F79B6DA002C930D /* ConfigManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManagerSpec.swift; sourceTree = "<group>"; };
 		EBD5D7DE1F797B7D00598E09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EBD5D7E01F797DEB00598E09 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +154,7 @@
 				EBC181771F79AC58002C930D /* Support */,
 				EBC181751F79AC53002C930D /* NetworkRequestMock.swift */,
 				EBC181781F79B0C5002C930D /* LoginManagerSpec.swift */,
+				EBC1817A1F79B6DA002C930D /* ConfigManagerSpec.swift */,
 			);
 			path = isMVCbadTests;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC181791F79B0C5002C930D /* LoginManagerSpec.swift in Sources */,
+				EBC1817B1F79B6DA002C930D /* ConfigManagerSpec.swift in Sources */,
 				EBC181761F79AC53002C930D /* NetworkRequestMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

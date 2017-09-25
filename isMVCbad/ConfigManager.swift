@@ -10,7 +10,7 @@ import Foundation
 
 class ConfigManager {
     
-    let network: NetworkRequest = FirebaseRequest()
+    var network: NetworkRequest = FirebaseRequest()
     
     func signout(completion: @escaping () -> Void) {
         network.signout(completion: nil)

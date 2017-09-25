@@ -41,6 +41,16 @@ class LoginManagerSpec: QuickSpec {
                 expect(success).toEventually(beFalse())
             }
             
+            it("should not login user with empty credentials") {
+                var success = true
+                
+                loginManager.login(email: nil, password: nil) { result in
+                    success = result
+                }
+                
+                expect(success).toEventually(beFalse())
+            }
+            
             it("should create new account") {
                 var success = false
                 
@@ -55,6 +65,16 @@ class LoginManagerSpec: QuickSpec {
                 var success = true
                 
                 loginManager.createAccount(email: "teste@teste.com", password: "123123") { result in
+                    success = result
+                }
+                
+                expect(success).toEventually(beFalse())
+            }
+            
+            it("should not login user with empty credentials") {
+                var success = true
+                
+                loginManager.createAccount(email: nil, password: nil) { result in
                     success = result
                 }
                 

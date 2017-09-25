@@ -12,6 +12,7 @@ import Foundation
 class NetworkRequestMock: NetworkRequest {
     private let user = User(id: "123123", email: "teste@teste.com")
     private let password = "qweqwe"
+    var wasCalled = false
     
     func createAccount(email: String, password: String, completion: @escaping (Result<User>) -> Void) {
         if self.user.email == email {
@@ -31,6 +32,7 @@ class NetworkRequestMock: NetworkRequest {
     }
     
     func signout(completion: (() -> Void)?) {
+        wasCalled = true
         completion?()
     }
 }
