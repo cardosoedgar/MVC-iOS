@@ -1,0 +1,10 @@
+# .slather.yml
+
+coverage_service: html
+xcodeproj: isMVCbad.xcodeproj
+workspace: isMVCbad.xcworkspace
+scheme: isMVCbad
+configuration: Debug
+output_directory: slather-report
+ignore:
+  - Pods/*
