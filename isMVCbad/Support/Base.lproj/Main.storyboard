@@ -19,6 +19,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gm5-Me-gOV">
                                 <rect key="frame" x="87.5" y="170" width="200" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="EMAIL_TEXT_FIELD"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="H1y-yG-slb"/>
                                     <constraint firstAttribute="height" constant="30" id="tfy-Rn-CeR"/>
@@ -29,6 +30,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AmD-cg-eiP">
                                 <rect key="frame" x="87.5" y="220" width="200" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="PASSWORD_TEXT_FIELD"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gM6-lF-ivz"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ivb-V3-4cn"/>
@@ -39,6 +41,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rg-Cx-Tuj">
                                 <rect key="frame" x="168" y="270" width="38" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="LOGIN_BUTTON"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vjp-dG-A5W"/>
@@ -46,6 +49,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XWP-Ae-j5G">
                                 <rect key="frame" x="133.5" y="320" width="107" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="BUTTON_CREATE_ACCOUNT"/>
                                 <state key="normal" title="Create Account"/>
                                 <connections>
                                     <action selector="createAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c8G-X9-oBF"/>
@@ -85,6 +89,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5tv-Jx-6P0">
                                 <rect key="frame" x="87.5" y="170" width="200" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TEXT_EMAIL_CREATE"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="ZDI-S4-3b3"/>
                                     <constraint firstAttribute="height" constant="30" id="bzb-qO-IUm"/>
@@ -95,6 +100,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Swp-ug-kes">
                                 <rect key="frame" x="87.5" y="220" width="200" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="TEXT_PASSWORD_CREATE"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="DmI-Er-Ukj"/>
                                     <constraint firstAttribute="height" constant="30" id="bMq-G2-QR6"/>
@@ -104,17 +110,28 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjn-82-53X">
-                                <rect key="frame" x="134" y="270" width="107" height="30"/>
-                                <state key="normal" title="Create Account"/>
+                                <rect key="frame" x="117" y="270" width="141" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="BUTTON_CREATE_NEW_ACCOUNT"/>
+                                <state key="normal" title="Create New Account"/>
                                 <connections>
                                     <action selector="createAccount:" destination="JPU-l5-9eJ" eventType="touchUpInside" id="LlM-DO-GZw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MxF-Iq-Xqq">
+                                <rect key="frame" x="170.5" y="320" width="34" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="BACK_BUTTON"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="JPU-l5-9eJ" eventType="touchUpInside" id="DY5-bE-ETI"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="5tv-Jx-6P0" firstAttribute="top" secondItem="FfM-v8-EZC" secondAttribute="top" constant="150" id="0Bz-DJ-S3L"/>
+                            <constraint firstItem="MxF-Iq-Xqq" firstAttribute="centerX" secondItem="uOk-2z-zZw" secondAttribute="centerX" id="Lw5-bO-GMD"/>
                             <constraint firstItem="Swp-ug-kes" firstAttribute="top" secondItem="5tv-Jx-6P0" secondAttribute="bottom" constant="20" id="az5-YC-EPt"/>
+                            <constraint firstItem="MxF-Iq-Xqq" firstAttribute="top" secondItem="bjn-82-53X" secondAttribute="bottom" constant="20" id="emi-aE-Cks"/>
                             <constraint firstItem="5tv-Jx-6P0" firstAttribute="centerX" secondItem="uOk-2z-zZw" secondAttribute="centerX" id="fDF-JQ-2Q9"/>
                             <constraint firstItem="Swp-ug-kes" firstAttribute="centerX" secondItem="uOk-2z-zZw" secondAttribute="centerX" id="fUi-63-WpJ"/>
                             <constraint firstItem="bjn-82-53X" firstAttribute="top" secondItem="Swp-ug-kes" secondAttribute="bottom" constant="20" id="mjC-Vy-ih6"/>
@@ -141,6 +158,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjA-tI-BsP">
                                 <rect key="frame" x="163" y="318.5" width="48" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="LOGOUT_BUTTON"/>
                                 <state key="normal" title="Logout"/>
                                 <connections>
                                     <action selector="logout:" destination="aw0-On-991" eventType="touchUpInside" id="iqD-Ri-R6A"/>

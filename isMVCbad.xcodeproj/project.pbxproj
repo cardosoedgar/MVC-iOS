@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2CC7C9CB91262190B851E5CC /* Pods_isMVCbadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4249417FCC8B90A1E13088C /* Pods_isMVCbadTests.framework */; };
 		473CB16599663B21FC8CCB0E /* Pods_isMVCbad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32692165A63F258409374653 /* Pods_isMVCbad.framework */; };
+		EB15CB961F7ACAAE0008F2D5 /* LoginViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB15CB951F7ACAAE0008F2D5 /* LoginViewControllerSpec.swift */; };
+		EB15CB981F7ACCFD0008F2D5 /* KIFExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB15CB971F7ACCFD0008F2D5 /* KIFExtensions.swift */; };
 		EBA570531F758E1900D3B6F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA570521F758E1900D3B6F6 /* AppDelegate.swift */; };
 		EBA570551F758E1900D3B6F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA570541F758E1900D3B6F6 /* LoginViewController.swift */; };
 		EBA570581F758E1900D3B6F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA570561F758E1900D3B6F6 /* Main.storyboard */; };
@@ -46,6 +48,8 @@
 		A2C685C97F8383DAF3493DBE /* Pods-isMVCbadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isMVCbadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isMVCbadTests/Pods-isMVCbadTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4249417FCC8B90A1E13088C /* Pods_isMVCbadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_isMVCbadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA670CB185F90B803F1E762D /* Pods-isMVCbadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isMVCbadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-isMVCbadTests/Pods-isMVCbadTests.release.xcconfig"; sourceTree = "<group>"; };
+		EB15CB951F7ACAAE0008F2D5 /* LoginViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerSpec.swift; sourceTree = "<group>"; };
+		EB15CB971F7ACCFD0008F2D5 /* KIFExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFExtensions.swift; sourceTree = "<group>"; };
 		EBA5704F1F758E1900D3B6F6 /* isMVCbad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = isMVCbad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA570521F758E1900D3B6F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBA570541F758E1900D3B6F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +159,7 @@
 				EBC181751F79AC53002C930D /* NetworkRequestMock.swift */,
 				EBC181781F79B0C5002C930D /* LoginManagerSpec.swift */,
 				EBC1817A1F79B6DA002C930D /* ConfigManagerSpec.swift */,
+				EB15CB951F7ACAAE0008F2D5 /* LoginViewControllerSpec.swift */,
 			);
 			path = isMVCbadTests;
 			sourceTree = "<group>";
@@ -194,6 +199,7 @@
 			children = (
 				EBA570691F758E1900D3B6F6 /* Info.plist */,
 				EBC181741F79AC53002C930D /* isMVCbadTests-Bridging-Header.h */,
+				EB15CB971F7ACCFD0008F2D5 /* KIFExtensions.swift */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -383,11 +389,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-isMVCbadTests/Pods-isMVCbadTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KIF/KIF.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KIF.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
@@ -439,8 +447,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBC181791F79B0C5002C930D /* LoginManagerSpec.swift in Sources */,
+				EB15CB981F7ACCFD0008F2D5 /* KIFExtensions.swift in Sources */,
 				EBC1817B1F79B6DA002C930D /* ConfigManagerSpec.swift in Sources */,
 				EBC181761F79AC53002C930D /* NetworkRequestMock.swift in Sources */,
+				EB15CB961F7ACAAE0008F2D5 /* LoginViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

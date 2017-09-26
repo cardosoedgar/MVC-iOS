@@ -14,6 +14,7 @@ extension UIViewController {
         let okButton = UIAlertAction(title: "Ok", style: .cancel) { action in
             alert.dismiss(animated: true, completion: nil)
         }
+        
         alert.addAction(okButton)
         self.present(alert, animated: true, completion: nil)
     }

@@ -32,4 +32,8 @@ class CreateAccountViewController: UIViewController {
             self.alert(withTitle: "error", message: "try again")
         }
     }
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }
