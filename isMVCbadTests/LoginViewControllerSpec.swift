@@ -19,9 +19,16 @@ class LoginViewControllerSpec: QuickSpec {
             var loginController: LoginViewController?
             
             beforeSuite {
-                let rootVC = UIApplication.shared.keyWindow?.rootViewController
-                loginController = rootVC as? LoginViewController
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                loginController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController
+                loadNetworkMock()
+                
+                UIApplication.shared.keyWindow?.rootViewController = loginController
                 KIFEnableAccessibility()
+            }
+            
+            beforeEach {
+                clearFields()
             }
             
             it("should click create account button and go to create account VC") {
@@ -31,16 +38,11 @@ class LoginViewControllerSpec: QuickSpec {
             }
             
             it("should present a alert when the user enters wrong credentials") {
-                self.tester().clearTextFromView(withAccessibilityIdentifier: "EMAIL_TEXT_FIELD")
-                self.tester().clearTextFromView(withAccessibilityIdentifier: "PASSWORD_TEXT_FIELD")
-                
                 self.tester().tapView(withAccessibilityIdentifier: "LOGIN_BUTTON")
                 self.tester().tapView(withAccessibilityLabel: "Ok")
             }
             
             it("should fill fields correct and login") {
-                loadNetworkMock()
-                
                 self.tester().clearText(fromAndThenEnterText: "teste@teste.com",
                                         intoViewWithAccessibilityIdentifier: "EMAIL_TEXT_FIELD")
                 self.tester().clearText(fromAndThenEnterText: "qweqwe",
@@ -51,20 +53,12 @@ class LoginViewControllerSpec: QuickSpec {
                 backFromHomeVC()
             }
             
-            it("should register a new account and the email appear on the email text field") {
-                loadNetworkMock()
-                
-                self.tester().tapView(withAccessibilityIdentifier: "BUTTON_CREATE_ACCOUNT")
-                self.tester().clearText(fromAndThenEnterText: "teste@teste.com",
-                                        intoViewWithAccessibilityIdentifier: "TEXT_EMAIL_CREATE")
-                self.tester().clearText(fromAndThenEnterText: "qweqwe",
-                                        intoViewWithAccessibilityIdentifier: "TEXT_PASSWORD_CREATE")
-                self.tester().tapView(withAccessibilityIdentifier: "BUTTON_CREATE_NEW_ACCOUNT")
-                
-                self.tester().expect(loginController?.emailTextField, toContainText: "teste@teste.com")
-            }
-            
             //MARK: Helper fuctions
+            
+            func clearFields() {
+                self.tester().clearTextFromView(withAccessibilityIdentifier: "EMAIL_TEXT_FIELD")
+                self.tester().clearTextFromView(withAccessibilityIdentifier: "PASSWORD_TEXT_FIELD")
+            }
             
             func loadNetworkMock() {
                 let loginManager = LoginManager()

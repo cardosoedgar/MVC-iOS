@@ -14,7 +14,7 @@ class CreateAccountViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     
     var delegate: LoginViewControllerDelegate?
-    let loginManager = LoginManager()
+    var loginManager = LoginManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()

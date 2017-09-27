@@ -9,11 +9,15 @@ target 'isMVCbad' do
 
   target 'isMVCbadTests' do
     inherit! :search_paths
-    
+
     pod 'Quick', :git => 'https://github.com/Quick/Quick'
     pod 'Nimble', :git => 'https://github.com/Quick/Nimble'
-    pod 'KIF'
     pod 'KIF/IdentifierTests'
+  end
+
+  target 'isMVCbadUnitTests' do
+    pod 'Quick', :git => 'https://github.com/Quick/Quick'
+    pod 'Nimble', :git => 'https://github.com/Quick/Nimble'
   end
 
 end

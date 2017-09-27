@@ -9,8 +9,13 @@
 /* Begin PBXBuildFile section */
 		2CC7C9CB91262190B851E5CC /* Pods_isMVCbadTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4249417FCC8B90A1E13088C /* Pods_isMVCbadTests.framework */; };
 		473CB16599663B21FC8CCB0E /* Pods_isMVCbad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32692165A63F258409374653 /* Pods_isMVCbad.framework */; };
+		C6C72274274CD0F7EEF4D0AB /* Pods_isMVCbad_isMVCbadUnitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C494C0CCF26F7E29B7F1CB84 /* Pods_isMVCbad_isMVCbadUnitTests.framework */; };
 		EB15CB961F7ACAAE0008F2D5 /* LoginViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB15CB951F7ACAAE0008F2D5 /* LoginViewControllerSpec.swift */; };
 		EB15CB981F7ACCFD0008F2D5 /* KIFExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB15CB971F7ACCFD0008F2D5 /* KIFExtensions.swift */; };
+		EB15CB9C1F7AE45C0008F2D5 /* CreateAccountViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB15CB9B1F7AE45C0008F2D5 /* CreateAccountViewControllerSpec.swift */; };
+		EB15CBAB1F7AE9B00008F2D5 /* LoginManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC181781F79B0C5002C930D /* LoginManagerSpec.swift */; };
+		EB15CBAC1F7AE9B60008F2D5 /* ConfigManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1817A1F79B6DA002C930D /* ConfigManagerSpec.swift */; };
+		EB15CBAD1F7AE9BA0008F2D5 /* NetworkRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC181751F79AC53002C930D /* NetworkRequestMock.swift */; };
 		EBA570531F758E1900D3B6F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA570521F758E1900D3B6F6 /* AppDelegate.swift */; };
 		EBA570551F758E1900D3B6F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA570541F758E1900D3B6F6 /* LoginViewController.swift */; };
 		EBA570581F758E1900D3B6F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBA570561F758E1900D3B6F6 /* Main.storyboard */; };
@@ -25,13 +30,18 @@
 		EBC1816D1F798118002C930D /* ControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1816C1F798118002C930D /* ControllerExtensions.swift */; };
 		EBC181721F79A480002C930D /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC181711F79A47F002C930D /* ConfigManager.swift */; };
 		EBC181761F79AC53002C930D /* NetworkRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC181751F79AC53002C930D /* NetworkRequestMock.swift */; };
-		EBC181791F79B0C5002C930D /* LoginManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC181781F79B0C5002C930D /* LoginManagerSpec.swift */; };
-		EBC1817B1F79B6DA002C930D /* ConfigManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1817A1F79B6DA002C930D /* ConfigManagerSpec.swift */; };
 		EBD5D7DF1F797B7D00598E09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5D7DE1F797B7D00598E09 /* HomeViewController.swift */; };
 		EBD5D7E11F797DEB00598E09 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5D7E01F797DEB00598E09 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		EB15CBA61F7AE9600008F2D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBA570471F758E1900D3B6F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBA5704E1F758E1900D3B6F6;
+			remoteInfo = isMVCbad;
+		};
 		EBA570641F758E1900D3B6F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = EBA570471F758E1900D3B6F6 /* Project object */;
@@ -44,12 +54,18 @@
 /* Begin PBXFileReference section */
 		292504D384A2F7FABA20CB99 /* Pods-isMVCbad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isMVCbad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isMVCbad/Pods-isMVCbad.debug.xcconfig"; sourceTree = "<group>"; };
 		32692165A63F258409374653 /* Pods_isMVCbad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_isMVCbad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		643675A72FEC8466C8565353 /* Pods-isMVCbad-isMVCbadUnitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isMVCbad-isMVCbadUnitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isMVCbad-isMVCbadUnitTests/Pods-isMVCbad-isMVCbadUnitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CDE440E321AE9411E940DAC /* Pods-isMVCbad-isMVCbadUnitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isMVCbad-isMVCbadUnitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-isMVCbad-isMVCbadUnitTests/Pods-isMVCbad-isMVCbadUnitTests.release.xcconfig"; sourceTree = "<group>"; };
 		97753A2CFEB77104C936A961 /* Pods-isMVCbad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isMVCbad.release.xcconfig"; path = "Pods/Target Support Files/Pods-isMVCbad/Pods-isMVCbad.release.xcconfig"; sourceTree = "<group>"; };
 		A2C685C97F8383DAF3493DBE /* Pods-isMVCbadTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isMVCbadTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-isMVCbadTests/Pods-isMVCbadTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A4249417FCC8B90A1E13088C /* Pods_isMVCbadTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_isMVCbadTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C494C0CCF26F7E29B7F1CB84 /* Pods_isMVCbad_isMVCbadUnitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_isMVCbad_isMVCbadUnitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA670CB185F90B803F1E762D /* Pods-isMVCbadTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-isMVCbadTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-isMVCbadTests/Pods-isMVCbadTests.release.xcconfig"; sourceTree = "<group>"; };
 		EB15CB951F7ACAAE0008F2D5 /* LoginViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerSpec.swift; sourceTree = "<group>"; };
 		EB15CB971F7ACCFD0008F2D5 /* KIFExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFExtensions.swift; sourceTree = "<group>"; };
+		EB15CB9B1F7AE45C0008F2D5 /* CreateAccountViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewControllerSpec.swift; sourceTree = "<group>"; };
+		EB15CBA11F7AE9600008F2D5 /* isMVCbadUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = isMVCbadUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB15CBA51F7AE9600008F2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBA5704F1F758E1900D3B6F6 /* isMVCbad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = isMVCbad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBA570521F758E1900D3B6F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBA570541F758E1900D3B6F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +92,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EB15CB9E1F7AE9600008F2D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6C72274274CD0F7EEF4D0AB /* Pods_isMVCbad_isMVCbadUnitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBA5704C1F758E1900D3B6F6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,6 +126,8 @@
 				97753A2CFEB77104C936A961 /* Pods-isMVCbad.release.xcconfig */,
 				A2C685C97F8383DAF3493DBE /* Pods-isMVCbadTests.debug.xcconfig */,
 				DA670CB185F90B803F1E762D /* Pods-isMVCbadTests.release.xcconfig */,
+				643675A72FEC8466C8565353 /* Pods-isMVCbad-isMVCbadUnitTests.debug.xcconfig */,
+				8CDE440E321AE9411E940DAC /* Pods-isMVCbad-isMVCbadUnitTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -111,8 +137,19 @@
 			children = (
 				32692165A63F258409374653 /* Pods_isMVCbad.framework */,
 				A4249417FCC8B90A1E13088C /* Pods_isMVCbadTests.framework */,
+				C494C0CCF26F7E29B7F1CB84 /* Pods_isMVCbad_isMVCbadUnitTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB15CBA21F7AE9600008F2D5 /* isMVCbadUnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBC1817A1F79B6DA002C930D /* ConfigManagerSpec.swift */,
+				EBC181781F79B0C5002C930D /* LoginManagerSpec.swift */,
+				EB15CBA51F7AE9600008F2D5 /* Info.plist */,
+			);
+			path = isMVCbadUnitTests;
 			sourceTree = "<group>";
 		};
 		EBA570461F758E1900D3B6F6 = {
@@ -120,6 +157,7 @@
 			children = (
 				EBA570511F758E1900D3B6F6 /* isMVCbad */,
 				EBA570661F758E1900D3B6F6 /* isMVCbadTests */,
+				EB15CBA21F7AE9600008F2D5 /* isMVCbadUnitTests */,
 				EBA570501F758E1900D3B6F6 /* Products */,
 				1AE0776E96AE10E8395912EF /* Pods */,
 				3E2099E2C8E39F27884DA634 /* Frameworks */,
@@ -131,6 +169,7 @@
 			children = (
 				EBA5704F1F758E1900D3B6F6 /* isMVCbad.app */,
 				EBA570631F758E1900D3B6F6 /* isMVCbadTests.xctest */,
+				EB15CBA11F7AE9600008F2D5 /* isMVCbadUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,9 +196,8 @@
 			children = (
 				EBC181771F79AC58002C930D /* Support */,
 				EBC181751F79AC53002C930D /* NetworkRequestMock.swift */,
-				EBC181781F79B0C5002C930D /* LoginManagerSpec.swift */,
-				EBC1817A1F79B6DA002C930D /* ConfigManagerSpec.swift */,
 				EB15CB951F7ACAAE0008F2D5 /* LoginViewControllerSpec.swift */,
+				EB15CB9B1F7AE45C0008F2D5 /* CreateAccountViewControllerSpec.swift */,
 			);
 			path = isMVCbadTests;
 			sourceTree = "<group>";
@@ -207,6 +245,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		EB15CBA01F7AE9600008F2D5 /* isMVCbadUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB15CBA81F7AE9600008F2D5 /* Build configuration list for PBXNativeTarget "isMVCbadUnitTests" */;
+			buildPhases = (
+				8ED09316FDB4519D8212325A /* [CP] Check Pods Manifest.lock */,
+				EB15CB9D1F7AE9600008F2D5 /* Sources */,
+				EB15CB9E1F7AE9600008F2D5 /* Frameworks */,
+				EB15CB9F1F7AE9600008F2D5 /* Resources */,
+				13501C01E190D280CF5C2ED1 /* [CP] Embed Pods Frameworks */,
+				8429AD4019E4C357DB278CF5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB15CBA71F7AE9600008F2D5 /* PBXTargetDependency */,
+			);
+			name = isMVCbadUnitTests;
+			productName = isMVCbadUnitTests;
+			productReference = EB15CBA11F7AE9600008F2D5 /* isMVCbadUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		EBA5704E1F758E1900D3B6F6 /* isMVCbad */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBA5706C1F758E1900D3B6F6 /* Build configuration list for PBXNativeTarget "isMVCbad" */;
@@ -258,6 +317,11 @@
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Concrete;
 				TargetAttributes = {
+					EB15CBA01F7AE9600008F2D5 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EBA5704E1F758E1900D3B6F6;
+					};
 					EBA5704E1F758E1900D3B6F6 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
@@ -285,11 +349,19 @@
 			targets = (
 				EBA5704E1F758E1900D3B6F6 /* isMVCbad */,
 				EBA570621F758E1900D3B6F6 /* isMVCbadTests */,
+				EB15CBA01F7AE9600008F2D5 /* isMVCbadUnitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		EB15CB9F1F7AE9600008F2D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBA5704D1F758E1900D3B6F6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +384,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13501C01E190D280CF5C2ED1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-isMVCbad-isMVCbadUnitTests/Pods-isMVCbad-isMVCbadUnitTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-isMVCbad-isMVCbadUnitTests/Pods-isMVCbad-isMVCbadUnitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		269100C9FDFB36E636CB31EF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -364,6 +462,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-isMVCbad/Pods-isMVCbad-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8429AD4019E4C357DB278CF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-isMVCbad-isMVCbadUnitTests/Pods-isMVCbad-isMVCbadUnitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		86F6906A8A9FEC5563A22000 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,6 +489,24 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-isMVCbad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ED09316FDB4519D8212325A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-isMVCbad-isMVCbadUnitTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -425,6 +556,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EB15CB9D1F7AE9600008F2D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB15CBAC1F7AE9B60008F2D5 /* ConfigManagerSpec.swift in Sources */,
+				EB15CBAB1F7AE9B00008F2D5 /* LoginManagerSpec.swift in Sources */,
+				EB15CBAD1F7AE9BA0008F2D5 /* NetworkRequestMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EBA5704B1F758E1900D3B6F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -446,9 +587,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBC181791F79B0C5002C930D /* LoginManagerSpec.swift in Sources */,
 				EB15CB981F7ACCFD0008F2D5 /* KIFExtensions.swift in Sources */,
-				EBC1817B1F79B6DA002C930D /* ConfigManagerSpec.swift in Sources */,
+				EB15CB9C1F7AE45C0008F2D5 /* CreateAccountViewControllerSpec.swift in Sources */,
 				EBC181761F79AC53002C930D /* NetworkRequestMock.swift in Sources */,
 				EB15CB961F7ACAAE0008F2D5 /* LoginViewControllerSpec.swift in Sources */,
 			);
@@ -457,6 +597,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		EB15CBA71F7AE9600008F2D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBA5704E1F758E1900D3B6F6 /* isMVCbad */;
+			targetProxy = EB15CBA61F7AE9600008F2D5 /* PBXContainerItemProxy */;
+		};
 		EBA570651F758E1900D3B6F6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = EBA5704E1F758E1900D3B6F6 /* isMVCbad */;
@@ -484,6 +629,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		EB15CBA91F7AE9600008F2D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 643675A72FEC8466C8565353 /* Pods-isMVCbad-isMVCbadUnitTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83C3V38WSB;
+				INFOPLIST_FILE = isMVCbadUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.concrete.isMVCbadUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/isMVCbad.app/isMVCbad";
+			};
+			name = Debug;
+		};
+		EB15CBAA1F7AE9600008F2D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CDE440E321AE9411E940DAC /* Pods-isMVCbad-isMVCbadUnitTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83C3V38WSB;
+				INFOPLIST_FILE = isMVCbadUnitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.concrete.isMVCbadUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/isMVCbad.app/isMVCbad";
+			};
+			name = Release;
+		};
 		EBA5706A1F758E1900D3B6F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -685,6 +864,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EB15CBA81F7AE9600008F2D5 /* Build configuration list for PBXNativeTarget "isMVCbadUnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB15CBA91F7AE9600008F2D5 /* Debug */,
+				EB15CBAA1F7AE9600008F2D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		EBA5704A1F758E1900D3B6F6 /* Build configuration list for PBXProject "isMVCbad" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

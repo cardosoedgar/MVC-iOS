@@ -28,7 +28,7 @@ class LoginManager {
     }
     
     func createAccount(email: String?, password: String?, completion: @escaping (Bool) -> Void) {
-        guard let email = email, let password = password else {
+        guard let email = email, let password = password, email != "", password != "" else {
             return completion(false)
         }
         
