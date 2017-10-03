@@ -30,6 +30,9 @@
 		EBC1816D1F798118002C930D /* ControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC1816C1F798118002C930D /* ControllerExtensions.swift */; };
 		EBC181721F79A480002C930D /* ConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC181711F79A47F002C930D /* ConfigManager.swift */; };
 		EBC181761F79AC53002C930D /* NetworkRequestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC181751F79AC53002C930D /* NetworkRequestMock.swift */; };
+		EBD370E61F841EAD00712D93 /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD370E51F841EAD00712D93 /* ViewCode.swift */; };
+		EBD370E81F8427FD00712D93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD370E71F8427FD00712D93 /* LoginView.swift */; };
+		EBD370EC1F843F4700712D93 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD370EB1F843F4700712D93 /* CreateAccountView.swift */; };
 		EBD5D7DF1F797B7D00598E09 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5D7DE1F797B7D00598E09 /* HomeViewController.swift */; };
 		EBD5D7E11F797DEB00598E09 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5D7E01F797DEB00598E09 /* CreateAccountViewController.swift */; };
 /* End PBXBuildFile section */
@@ -87,6 +90,9 @@
 		EBC181751F79AC53002C930D /* NetworkRequestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestMock.swift; sourceTree = "<group>"; };
 		EBC181781F79B0C5002C930D /* LoginManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManagerSpec.swift; sourceTree = "<group>"; };
 		EBC1817A1F79B6DA002C930D /* ConfigManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigManagerSpec.swift; sourceTree = "<group>"; };
+		EBD370E51F841EAD00712D93 /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		EBD370E71F8427FD00712D93 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		EBD370EB1F843F4700712D93 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		EBD5D7DE1F797B7D00598E09 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EBD5D7E01F797DEB00598E09 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,13 +185,11 @@
 			children = (
 				EBC181731F79A489002C930D /* plist */,
 				EBB9F8BF1F75B1F000475941 /* Network */,
+				EBD370E91F843F1400712D93 /* Login */,
+				EBD370EA1F843F2600712D93 /* CreateAccount */,
 				EBA570521F758E1900D3B6F6 /* AppDelegate.swift */,
-				EBA570541F758E1900D3B6F6 /* LoginViewController.swift */,
 				EBD5D7DE1F797B7D00598E09 /* HomeViewController.swift */,
-				EBD5D7E01F797DEB00598E09 /* CreateAccountViewController.swift */,
 				EBA570751F758EAE00D3B6F6 /* User.swift */,
-				EBC181711F79A47F002C930D /* ConfigManager.swift */,
-				EBA570771F758EEF00D3B6F6 /* LoginManager.swift */,
 				EBA570721F758E4700D3B6F6 /* Support */,
 			);
 			path = isMVCbad;
@@ -205,6 +209,7 @@
 		EBA570721F758E4700D3B6F6 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				EBD370E51F841EAD00712D93 /* ViewCode.swift */,
 				EBC1816C1F798118002C930D /* ControllerExtensions.swift */,
 				EBA570731F758E9200D3B6F6 /* Default-568h@2x.png */,
 				EBA570561F758E1900D3B6F6 /* Main.storyboard */,
@@ -240,6 +245,26 @@
 				EB15CB971F7ACCFD0008F2D5 /* KIFExtensions.swift */,
 			);
 			name = Support;
+			sourceTree = "<group>";
+		};
+		EBD370E91F843F1400712D93 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EBA570771F758EEF00D3B6F6 /* LoginManager.swift */,
+				EBA570541F758E1900D3B6F6 /* LoginViewController.swift */,
+				EBD370E71F8427FD00712D93 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EBD370EA1F843F2600712D93 /* CreateAccount */ = {
+			isa = PBXGroup;
+			children = (
+				EBD5D7E01F797DEB00598E09 /* CreateAccountViewController.swift */,
+				EBC181711F79A47F002C930D /* ConfigManager.swift */,
+				EBD370EB1F843F4700712D93 /* CreateAccountView.swift */,
+			);
+			path = CreateAccount;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -580,8 +605,11 @@
 				EBC181721F79A480002C930D /* ConfigManager.swift in Sources */,
 				EBA570781F758EEF00D3B6F6 /* LoginManager.swift in Sources */,
 				EBA570531F758E1900D3B6F6 /* AppDelegate.swift in Sources */,
+				EBD370EC1F843F4700712D93 /* CreateAccountView.swift in Sources */,
+				EBD370E81F8427FD00712D93 /* LoginView.swift in Sources */,
 				EBD5D7E11F797DEB00598E09 /* CreateAccountViewController.swift in Sources */,
 				EBB9F8BE1F75B02900475941 /* NetworkRequest.swift in Sources */,
+				EBD370E61F841EAD00712D93 /* ViewCode.swift in Sources */,
 				EBD5D7DF1F797B7D00598E09 /* HomeViewController.swift in Sources */,
 				EBA570761F758EAE00D3B6F6 /* User.swift in Sources */,
 			);
