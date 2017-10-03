@@ -4,6 +4,7 @@ platform :ios, '11.0'
 target 'isMVCbad' do
   use_frameworks!
 
+  pod 'Cartography'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
 
