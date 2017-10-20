@@ -46,10 +46,8 @@ class LoginViewController: UIViewController, LoginViewControllerDelegate, LoginV
     }
     
     func loadHome() {
-        let homeVC = storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
-        if let homeVC = homeVC {
-            self.present(homeVC, animated: true, completion: nil)
-        }
+        let vc = HomeViewController()
+        self.present(vc, animated: true, completion: nil)
     }
     
     func fill(withEmail email: String) {

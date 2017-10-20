@@ -80,6 +80,7 @@ class LoginView: UIView, ViewCode {
         passwordTextField.font = UIFont.systemFont(ofSize: 14)
         passwordTextField.placeholder = "password"
         passwordTextField.borderStyle = .roundedRect
+        passwordTextField.isSecureTextEntry = true
         
         loginButton.setTitle("Login", for: .normal)
         loginButton.addTarget(delegate, action: #selector(delegate?.loginButtonPressed), for: .touchUpInside)

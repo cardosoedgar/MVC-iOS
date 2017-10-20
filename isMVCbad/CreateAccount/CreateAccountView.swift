@@ -75,6 +75,7 @@ class CreateAccountView: UIView, ViewCode {
         passwordTextField.font = UIFont.systemFont(ofSize: 14)
         passwordTextField.placeholder = "password"
         passwordTextField.borderStyle = .roundedRect
+        passwordTextField.isSecureTextEntry = true
         
         createAccountButton.setTitle("Create New Account", for: .normal)
         createAccountButton.addTarget(delegate, action: #selector(delegate?.createAccountButtonPressed), for: .touchUpInside)
